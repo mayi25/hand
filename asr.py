@@ -5,7 +5,7 @@ import whisper
 class ASR():
     def __init__(self):
         print("Loading whisper model...")
-        self.model = whisper.load_model("tiny")
+        self.model = whisper.load_model("large")
 
     def record_audio_to_file(self, filename="output.wav", record_seconds=5):
         """Records audio from the microphone for a specified duration and saves it to a file."""
